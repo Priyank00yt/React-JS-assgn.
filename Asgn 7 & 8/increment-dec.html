@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    #counter {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  </style>
+  <title>Increment Decrement State Change</title>
+</head>
+<body>
+
+  <h1>Increment/Decrement State Change</h1>
+
+  <div id="counter">0</div>
+  <button onclick="increment()">Increment</button>
+  <button onclick="decrement()">Decrement</button>
+
+  <script>
+    // Initial counter value
+    let counter = 0;
+
+    // Function to increment the counter
+    function increment() {
+      counter++;
+      updateCounter();
+    }
+
+    // Function to decrement the counter
+    function decrement() {
+      counter--;
+      updateCounter();
+    }
+
+    // Function to update the counter value on the webpage
+    function updateCounter() {
+      document.getElementById('counter').innerText = counter;
+    }
+  </script>
+
+</body>
+</html>
